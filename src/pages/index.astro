@@ -1,11 +1,431 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Rocka Dev">
+  <div class="container">
+    <header>
+      <div class="contact-info">
+        <h1>Vicente Jesus Muñoz Lizama</h1>
+        <p class="github-handle">@Utmite</p>
+        <a href="https://github.com/Utmite" target="_blank" class="github-link">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            ></path>
+          </svg>
+          github.com/Utmite
+        </a>
+      </div>
+      <h2 class="portfolio-title">Portfolio</h2>
+      <p class="subtitle">Desarrollador Full Stack & Líder Técnico</p>
+      <hr />
+    </header>
+
+    <main>
+      <section class="projects">
+        <h2>📂 Proyectos Destacados</h2>
+
+        <div class="project">
+          <h3>
+            <a
+              href="https://github.com/open-source-uc/UbiCate-v2"
+              target="_blank">🗺️ UbiCate-v2</a
+            >
+          </h3>
+          <div class="role">Líder del Proyecto</div>
+          <p>
+            Plataforma web interactiva para mejorar la navegación en campus
+            universitarios. Proporciona mapas detallados y ubicaciones precisas
+            de aulas, servicios y puntos de interés.
+          </p>
+          <div class="tech-stack">
+            <span class="tech">TypeScript</span>
+            <span class="stats">⭐ 24 🍴 7</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>
+            <a href="https://github.com/open-source-uc/v2-ramos" target="_blank"
+              >📚 v2-ramos</a
+            >
+          </h3>
+          <div class="role">Jefe de Backend</div>
+          <p>
+            Sistema completo de gestión académica para OpenSource eUC. Facilita
+            la búsqueda, organización y planificación de cursos universitarios
+            con una interfaz moderna e intuitiva.
+          </p>
+          <div class="tech-stack">
+            <span class="tech">TypeScript</span>
+            <span class="stats">⭐ 11 🍴 2</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>🔄 Pipeline de Datos Masivos</h3>
+          <div class="role">Desarrollador Principal</div>
+          <p>
+            Sistema avanzado de scraping y procesamiento de streams de datos en
+            tiempo real. Implementa arquitecturas escalables para la extracción,
+            transformación y carga de grandes volúmenes de información.
+          </p>
+          <div class="tech-stack">
+            <span class="tech">Python</span>
+            <span class="tech">Apache Airflow</span>
+            <span class="tech">Docker</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience">
+        <h2>💼 Experiencia Profesional</h2>
+
+        <div class="job">
+          <div class="position">
+            <h3>💊 Práctica Profesional - Farmacia Cofar</h3>
+            <span class="duration">3 meses</span>
+            <p>
+              Experiencia en el sector farmacéutico, aplicando conocimientos
+              técnicos en sistemas de información y procesos digitales para
+              optimizar operaciones.
+            </p>
+          </div>
+        </div>
+
+        <div class="leadership">
+          <div class="position">
+            <h3>🏛️ Coordinador General - OpenSource eUC</h3>
+            <span class="duration">1 año</span>
+            <p>
+              Liderazgo y coordinación de múltiples equipos de desarrollo.
+              Gestión de proyectos de software libre para la comunidad
+              universitaria.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>🛠️ Stack Técnico</h2>
+
+        <div class="skill-category">
+          <h3>Backend & DevOps</h3>
+          <div class="skill-list">
+            <span class="skill">Java (Plugins PaperMC)</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Nginx</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Big Data Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Cloud & Edge Computing</h3>
+          <div class="skill-list">
+            <span class="skill">Cloudflare Workers</span>
+            <span class="skill">R2 Storage</span>
+            <span class="skill">CDN</span>
+            <span class="skill">Edge Computing</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Desarrollo & Arquitectura</h3>
+          <div class="skill-list">
+            <span class="skill">TypeScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Sistemas Distribuidos</span>
+            <span class="skill">Microservicios</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>
+        <em>Construyendo soluciones escalables y liderando equipos técnicos</em>
+      </p>
+    </footer>
+  </div>
 </Layout>
+
+<style>
+  .container {
+    background: white;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d0d0d0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .contact-info {
+    margin-bottom: 30px;
+  }
+
+  .contact-info h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  .github-handle {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    font-family: "Courier New", monospace;
+  }
+
+  .github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    border: 1px solid #3498db;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .github-link:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+  }
+
+  .portfolio-title {
+    font-size: 2em;
+    color: #34495e;
+    margin: 20px 0 10px 0;
+    font-weight: normal;
+    letter-spacing: -1px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 3em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: -1px;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin: 40px 0 25px 0;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+
+  h3 a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  h3 a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: #bdc3c7;
+    margin: 30px 0;
+  }
+
+  .project {
+    background: #f8f9fa;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 4px solid #3498db;
+    border-radius: 0 4px 4px 0;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .project:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+  }
+
+  .role {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .project p {
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+  .tech-stack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tech {
+    background: #ecf0f1;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+
+  .stats {
+    color: #7f8c8d;
+    font-size: 0.9em;
+  }
+
+  .job {
+    background: #f8f9fa;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 4px solid #9b59b6;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .job .position h3 {
+    color: #9b59b6;
+  }
+
+  .job .duration {
+    background: #9b59b6;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+
+  .leadership {
+    background: #f1f2f6;
+    padding: 25px;
+    border-left: 4px solid #e74c3c;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .position h3 {
+    color: #e74c3c;
+  }
+
+  .duration {
+    background: #e74c3c;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+
+  .skill-category {
+    margin-bottom: 30px;
+  }
+
+  .skill-category h3 {
+    color: #27ae60;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skill {
+    background: #e8f5e8;
+    color: #27ae60;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    border: 1px solid #d5e7d5;
+    transition: all 0.2s ease;
+  }
+
+  .skill:hover {
+    background: #27ae60;
+    color: white;
+    transform: translateY(-1px);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #7f8c8d;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px 20px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    .tech-stack {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .duration {
+      margin-left: 0;
+      margin-top: 5px;
+      display: block;
+      width: fit-content;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .skill-list {
+      flex-direction: column;
+    }
+
+    .skill {
+      text-align: center;
+    }
+  }
+</style>

@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Permitir acceso a todos los archivos principales
+Allow: /index.html
+Allow: /*.css
+Allow: /*.js
+Allow: /*.svg
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.ico
